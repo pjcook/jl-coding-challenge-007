@@ -2,7 +2,7 @@
 
 import Foundation
 
-func myFilter<T>(input: [T], filter: ((T) -> Bool)) -> [T] where T: (Numeric) {
+func myFilter<T>(input: [T], filter: ((T) -> Bool)) -> [T] {
     var results = [T]()
     for item in input {
         if filter(item) {
